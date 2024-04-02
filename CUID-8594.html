@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUID-8481</title>
+    <style>
+	@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+	@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: bisque;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 980px;
+}
+header button {
+  color: #bdbdbd;
+  outline: none;
+  border: none;
+  background: #d5d5d5;
+  padding: 10px 20px;
+  border-radius: 2.5px;
+  margin-right: 20px;
+  font-size: 1em;
+  font-weight: 600;
+}
+header button:hover {
+  cursor: pointer;
+  background: #3d3d44;
+}
+
+
+ul.task-items li.item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+ul.task-items li.item.type1 .task .icon {
+  background: #9575cd;
+}
+
+
+ul.task-items li.item .task {
+  display: flex;
+  align-items: center;
+  width: 240px;
+}
+ul.task-items li.item .task .icon {
+  background: #bdbdbd;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right:20px ;
+}
+
+ul.task-items li.item .status {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #2e7d32;
+  width: 145px;
+  margin-left: 30px;
+}
+ul.task-items li.item .status .icon {
+  background: #2e7d32;
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+ul.task-items li.item .progress {
+  width: 190px;
+}
+ul.task-items li.item .progress progress {
+  display: block;
+  margin-left: 0;
+  -webkit-appearance: none;
+  height: 12.5px;
+  width: 142.5px;
+}
+ul.task-items li.item .progress progress::-webkit-progress-bar {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+ul.task-items li.item .progress ::-webkit-progress-value {
+  background-color: #4dd0e1;
+  border-radius: 5px;
+}
+ul.task-items li.item .dates {
+  width: 150px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <!-- Header Bar -->
+        <header>
+            <div class="button-col">
+                <a href="index.html"><button class="btn" name="Add Task"> Back to Home</button></a>
+            </div>
+    
+    
+        </header>
+    
+        <!-- List Items -->
+        <ul class="task-items">
+            
+            <!-- List Item -->
+			 <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #367056 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> Adari Aravind </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+			 <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #367057 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> B Sai Rekha Lakshmana </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+			 <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #371811 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> B. Sony</div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+			 <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #369238 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> B. Vineetha </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #375392 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> Ch. Gowri Prasad </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="30" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #370508 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> D. Lohit Sai </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #373551 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> G. Raghavendra Reddy </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="30" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #367055 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> K Sai Niteesh Kumar </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+           
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #372434 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> M. Harshavardhan </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #375610 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> Marukurthi Jayanth </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #371305 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> R. Brahmaji </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#" target="_blank"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #372435 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> S. Sofia </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #368057 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> Shaik Ameer </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>  
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #367472 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> Shrajan Vetcha </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>  
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #368815 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> T. Rama Lakshmi </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>  
+            <li class="item type1">
+                <div class="task">
+                    <div class="icon"></div>
+                    <div class="text"> #368813 </div>
+                </div>
+    
+                <div class="status">
+                    <div class="icon off"> </div>
+                    <div class="text"> T Vanaja </div>
+                </div>
+    
+                <div class="progress">
+                    <progress value="90" max="100" />
+                </div>
+    
+                <div class="dates">
+                    <a href="#" target="_blank"> Portfolio </a>
+                </div>
+    
+                <div class="priority">
+                    <a href="#"> Resume </a>
+                </div>
+            </li>  
+  
+        </ul>
+    
+    </section>
+</body>
+</html>
