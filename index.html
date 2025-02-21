@@ -1,178 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentWorks</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentWorks</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: bisque;
+      ;
+    }
 
-    <style>
-      body{
-        margin: 0;
-        padding: 0;
-        background-color: bisque;;
-      }
-	  .one{
-	  margin-top:50px;
-	  }
-    .main{
-      
-      display: inline-flex;
+
+    .main {
+
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      /* align-items: center; */
-      width: 100%;
-      
+
     }
-        .card {
-  width: 100%;
-  max-width: 300px;
-  min-width: 200px;
-  height: 250px;
-  background-color: #292929;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
-  font-size: 16px;
-  transition: all 0.3s ease;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-}
 
-.icon {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 80px;
-  background: linear-gradient(90deg, #7eaaff 0%, #ff48fb 40%, rgba(0, 0, 0, 0.28) 60%);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-}
+    .card {
+      width: 100%;
+      max-width: 300px;
+      min-width: 200px;
+      height: 250px;
+      background-color: #292929;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+      border: 2px solid rgba(7, 7, 7, 0.12);
+      font-size: 16px;
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+    }
 
-.icon svg {
-  fill: white;
-}
+    .icon {
+      margin: 0 auto;
+      width: 100%;
+      height: 80px;
+      max-width: 80px;
+      background: linear-gradient(90deg, #7eaaff 0%, #ff48fb 40%, rgba(0, 0, 0, 0.28) 60%);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.8s ease;
+      background-position: 0px;
+      background-size: 200px;
+    }
 
-.card .title {
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
+    .icon svg {
+      fill: white;
+    }
 
-.card .text {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-  font-weight: 200;
-  letter-spacing: 2px;
-  opacity: 0;
-  max-height: 0;
-  transition: all 0.3s ease;
-}
+    .card .title {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      margin-top: 30px;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
 
-.card:hover .text {
-  transition: all 0.3s ease;
-  opacity: 1;
-  max-height: 40px;
-}
+    .card .text {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 13px;
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      font-weight: 200;
+      letter-spacing: 2px;
+      opacity: 0;
+      max-height: 0;
+      transition: all 0.3s ease;
+    }
 
-.card:hover .icon {
-  background-position: -120px;
-  transition: all 0.3s ease;
-}
+    .card:hover .text {
+      transition: all 0.3s ease;
+      opacity: 1;
+      max-height: 40px;
+    }
 
-.card:hover .icon svg path {
-  fill: url('#gradientColor');
-  transition: all 0.3s ease;
-}
-    </style>
+    .card:hover .icon {
+      background-position: -120px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover .icon svg path {
+      fill: url('#gradientColor');
+      transition: all 0.3s ease;
+    }
+    .header{
+      z-index: 999;
+    }
+    a{
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
-    <div class=" main row one">
-    <!--  CUID-8481 -->
-    <div class="card col-sm-4">
-      <a href="8481.html">
+    <div class="header container border bg-dark rounded mt-2 text-light position-sticky top-0 d-flex justify-content-between p-4">
+      <h2>Techmahindra Smart Academy</h2>
+      <h2>Student Portfolios</h2>
+    </div>
+
+  <div class="container main">
+    <!--  CUID-9306 -->
+    <div class="card">
+      <a href="./CUID-9306.html">
         <div class="icon">
-         
+
         </div>
-        <p class="title">CUID-8481</p>
-        <p class="text">16Oct2024 to 16Feb2024</p>
-      </a>
-      </div>
-    <!--  CUID-8594 -->
-      <div class="card col-sm-4">
-        <a href="CUID-8594.html">
-        <div class="icon">
-         
-        </div>
-        <p class="title">CUID-8594</p>
-        <p class="text">4Dec2024 to 4Apr2024</p>
-      </a>
-      </div>
-	  <!--  CUID-8893 -->
-      <div class="card col-sm-4">
-	  <a href="CUID-8893.html">
-        <div class="icon">
-          
-        </div>
-        <p class="title">CUID-8893</p>
+        <p class="title">CUID-9306</p>
         <p class="text">19Feb2024 to 19Jun2024</p>
-		</a>
-      </div>
-      </div>
-	  
-	  <div class=" main row">
-      <!--  CUID-8992 -->
-    <div class="card col-sm-4">
-      <a href="CUID-8992.html">
-        <div class="icon">
-         
-        </div>
-        <p class="title">CUID-8992</p>
-        <p class="text">16Oct2024 to 16Feb2024</p>
       </a>
-      </div>
-    <!--  CUID-New -->
-      <div class="card col-sm-4">
-        <a href="#">
+    </div>
+    <!--  CUID-9256 -->
+    <div class="card">
+      <a href="./CUID-9256.html">
         <div class="icon">
-         
+
+        </div>
+        <p class="title">CUID-9256</p>
+        <p class="text">19Feb2024 to 19Jun2024</p>
+      </a>
+    </div>
+    <!--  CUID-9174 -->
+    <div class="card ">
+      <a href="./CUID-9174.html">
+        <div class="icon">
+
         </div>
         <p class="title">CUID-9174</p>
         <p class="text">4Dec2024 to 4Apr2024</p>
       </a>
-      </div>
-	  <!--  CUID-8481 --><!--  CUID-8481 -->
-      <div class="card col-sm-4">
-	  <a href="#">
+    </div>
+
+    <!--  CUID-8992 -->
+    <div class="card">
+      <a href="CUID-8992.html">
         <div class="icon">
-          
+
         </div>
-        <p class="title">CUID-9256</p>
+        <p class="title">CUID-8992</p>
+        <p class="text">16Oct2024 to 16Feb2024</p>
+      </a>
+    </div>
+
+    <!--  CUID-8893 -->
+    <div class="card">
+      <a href="CUID-8893.html">
+        <div class="icon">
+
+        </div>
+        <p class="title">CUID-8893</p>
         <p class="text">19Feb2024 to 19Jun2024</p>
-		</a>
-      </div>
-      </div>
+      </a>
+    </div>
+    <!--  CUID-8594 -->
+    <div class="card">
+      <a href="CUID-8594.html">
+        <div class="icon">
+
+        </div>
+        <p class="title">CUID-8594</p>
+        <p class="text">4Dec2024 to 4Apr2024</p>
+      </a>
+    </div>
+    <!--  CUID-8481 -->
+    <div class="card ">
+      <a href="./CUID-8481.html">
+        <div class="icon">
+
+        </div>
+        <p class="title">CUID-8481</p>
+        <p class="text">16Oct2024 to 16Feb2024</p>
+      </a>
+    </div>
+  </div>
+
+
+
 </body>
+
 </html>
